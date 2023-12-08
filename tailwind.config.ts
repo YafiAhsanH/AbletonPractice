@@ -18,6 +18,7 @@ const config: Config = {
         "my-blue": "#b1c5ff",
         "my-yellow": "#fbffa7",
         "my-green": "#b6ffc0",
+        "my-purple": "#d5b3ff",
       },
       gridTemplateRows: {
         "7": "repeat(7, minmax(0, 1fr))",

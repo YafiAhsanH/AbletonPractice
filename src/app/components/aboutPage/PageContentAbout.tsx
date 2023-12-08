@@ -139,7 +139,21 @@ const PageContentAbout = () => {
           production techniques and best practices.
         </TextSectionDesc>
       </TextSection>
-      <div>Images</div>
+      <div className="w-full flex relative h-[130vh]">
+        <div className="absolute w-full h-full z-10 flex">
+          <div className="bg-my-purple w-[67.5%] ml-[17%]"></div>
+        </div>
+        <div className="z-20 grid grid-rows-5 grid-cols-12 w-full my-28">
+          <div
+            className="row-start-2 row-span-3 col-start-2 col-span-4 bg-cover flex justify-center items-center"
+            style={{ backgroundImage: `url(/image7.jpg)` }}
+          ></div>
+          <div
+            className="row-start-1 row-span-full col-start-8 col-span-full bg-cover flex justify-center items-center"
+            style={{ backgroundImage: `url(/image8.jpg)` }}
+          ></div>
+        </div>
+      </div>
       <TextSection>
         <TextSectionTitle>
           {`We want our employees to love it here. Since we're looking for exceptional talent from around the world, we will do everything 

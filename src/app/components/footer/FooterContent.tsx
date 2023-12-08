@@ -1,10 +1,29 @@
+"use client";
 import React from "react";
 import FooterSectionTitle from "./FooterSectionTitle";
 import FooterSectionItem from "./FooterSectionItem";
 import SocialMediaLinks from "./SocialMediaLinks";
 import Dropdown from "./Dropdown";
+import { useState } from "react";
 
 const FooterContent = () => {
+  const languages: string[] = [
+    "English",
+    "Japanese",
+    "Spanish",
+    "French",
+    "Dutch",
+  ];
+  const locations: string[] = [
+    "Australia",
+    "Japan",
+    "Spain",
+    "France",
+    "Netherlands",
+  ];
+
+  const [test, setTest] = useState("");
+
   return (
     <div className="grid grid-cols-3 grid-rows-2 gap-6 py-16">
       <div className="col-start-1 flex flex-col ">
@@ -46,8 +65,8 @@ const FooterContent = () => {
       <div className="col-start-2 flex flex-col relative gap-2">
         <FooterSectionTitle>Language and Location</FooterSectionTitle>
         <div className="flex justify-between gap-1">
-          <Dropdown placeholder="English"/>
-          <Dropdown placeholder="Australia"/>
+          <Dropdown placeholder="English" items={languages} />
+          <Dropdown placeholder="Australia" items={locations} />
         </div>
       </div>
     </div>
