@@ -4,7 +4,6 @@ import FooterSectionTitle from "./FooterSectionTitle";
 import FooterSectionItem from "./FooterSectionItem";
 import SocialMediaLinks from "./SocialMediaLinks";
 import Dropdown from "./Dropdown";
-import { useState } from "react";
 
 const FooterContent = () => {
   const languages: string[] = [
@@ -21,8 +20,6 @@ const FooterContent = () => {
     "France",
     "Netherlands",
   ];
-
-  const [test, setTest] = useState("");
 
   return (
     <div className="grid grid-cols-3 grid-rows-2 gap-6 py-16">

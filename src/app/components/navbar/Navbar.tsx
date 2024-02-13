@@ -17,7 +17,10 @@ const Navbar = () => {
         <div className="px-5">
           <Logo active={true} />
         </div>
-        <div className="flex flex-1 items-center">
+        <div className="flex flex-1 my-laptop:hidden">
+          <NavbarItem onClick={() => setMore(!more)}>{`Menu ${more ? "^" : "v"}`}</NavbarItem>
+        </div>
+        <div className="my-laptop:flex flex-1 items-center hidden">
           <NavbarItem>Live</NavbarItem>
           <NavbarItem>Push</NavbarItem>
           <NavbarItem>Note</NavbarItem>
@@ -36,8 +39,8 @@ const Navbar = () => {
             </p>
           </NavbarItem>
         </div>
-        <NavbarItem textColor="text-blue-700">Try Live for free</NavbarItem>
-        <NavbarItem fontSize="text-sm">Log in or register</NavbarItem>
+        <NavbarItem textColor="my-laptop:block hidden text-blue-700">Try Live for free</NavbarItem>
+        <NavbarItem fontSize="my-laptop:block hidden text-sm">Log in or register</NavbarItem>
       </div>
       {more && <MoreNavbar />}
     </>

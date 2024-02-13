@@ -26,6 +26,9 @@ const config: Config = {
         "11": "repeat(11, minmax(0, 1fr))",
         "12": "repeat(12, minmax(0, 1fr))",
       },
+      screens: {
+        'my-laptop': '1050px',
+      },
     },
   },
   plugins: [],

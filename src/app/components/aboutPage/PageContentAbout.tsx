@@ -10,7 +10,7 @@ const PageContentAbout = () => {
     <div className="flex flex-col items-center w-full">
       <div className="w-full px-[8%]">
         <div
-          className="flex justify-center items-center bg-cover h-[75vh] bg-center text-my-orange font-semibold text-9xl "
+          className="flex justify-center items-center bg-cover h-[75vh] bg-center text-my-orange font-semibold md:text-9xl sm:text-8xl text-6xl"
           style={{ backgroundImage: `url(/studio.jpg)` }}
         >
           Ableton
